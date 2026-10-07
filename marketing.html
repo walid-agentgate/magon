@@ -66,6 +66,70 @@
       </p>
     </div>
   </section>
+
+  <section id="how-it-works" style="padding:70px 34px;">
+    <div style="max-width:1000px;margin:0 auto;text-align:center;">
+      <div class="section-label">HOW IT WORKS</div>
+
+      <h2 style="font-size:clamp(30px,5vw,48px);line-height:1.1;margin:12px 0 18px;">
+        Every tool call gets a decision.
+      </h2>
+
+      <p style="font-size:18px;line-height:1.7;color:#8995ad;max-width:700px;margin:0 auto 42px;">
+        AgentGate evaluates actions at runtime before they reach the systems your agent can access.
+      </p>
+
+      <div style="display:grid;grid-template-columns:1fr auto 1.2fr auto 1fr;gap:14px;align-items:center;text-align:center;">
+        <div class="card">
+          <strong>AI Agent</strong>
+          <div style="color:#8995ad;margin-top:8px;">Tool call</div>
+        </div>
+
+        <div style="font-size:28px;color:#69758d;">→</div>
+
+        <div class="card">
+          <strong>AgentGate</strong>
+          <div style="color:#8995ad;margin-top:8px;">
+            Policy evaluation<br>
+            Risk assessment<br>
+            Runtime enforcement
+          </div>
+        </div>
+
+        <div style="font-size:28px;color:#69758d;">→</div>
+
+        <div class="card">
+          <strong>Decision</strong>
+          <div style="margin-top:12px;font-weight:700;">
+            ALLOW · ASK · BLOCK
+          </div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px;text-align:left;">
+        <div class="card">
+          <strong>ALLOW</strong>
+          <p style="color:#8995ad;line-height:1.6;margin-bottom:0;">
+            Safe actions continue.
+          </p>
+        </div>
+
+        <div class="card">
+          <strong>ASK</strong>
+          <p style="color:#8995ad;line-height:1.6;margin-bottom:0;">
+            Sensitive actions require human approval.
+          </p>
+        </div>
+
+        <div class="card">
+          <strong>BLOCK</strong>
+          <p style="color:#8995ad;line-height:1.6;margin-bottom:0;">
+            Unauthorized or dangerous actions are stopped.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 </body>
 </html>
