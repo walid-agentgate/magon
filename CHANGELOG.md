@@ -1,3 +1,7 @@
+# 2.14.13 — Package Metadata
+
+- **Added `license`, `repository`, `homepage` and `bugs` to the package metadata**, so the npm page links to the source, the issue tracker and the MIT license. No runtime changes.
+
 # 2.14.12 — Local Dev Session Hardening
 
 - **`agentgate dev` now binds to `127.0.0.1` by default.** Previously it listened on all interfaces. Set `HOST=0.0.0.0` to expose it deliberately (for example in a container).
