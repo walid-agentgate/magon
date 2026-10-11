@@ -1,3 +1,7 @@
+# 2.14.14 — Naming Consistency
+
+- **The product is now called AgentGate by MAGON wherever users see it.** The README and the `agentgate --help` banner used "MAGON" alone; MAGON remains the company name. No runtime changes.
+
 # 2.14.13 — Package Metadata
 
 - **Added `license`, `repository`, `homepage` and `bugs` to the package metadata**, so the npm page links to the source, the issue tracker and the MIT license. No runtime changes.
