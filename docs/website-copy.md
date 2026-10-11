@@ -1,7 +1,7 @@
 # AgentGate Website Copy — Launch Draft
 
 ## Hero
-**Control what your AI agents can actually do.**
+**Protect your first sensitive AI-agent tool before it executes.**
 
 AgentGate is the runtime control plane for AI agent actions. Stop dangerous tool calls before they execute, require approval for sensitive actions, and keep replayable evidence of every decision.
 
