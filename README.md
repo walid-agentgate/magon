@@ -704,3 +704,7 @@ agentgate validate-security
 ## Security hardening
 
 The default egress guard blocks and redacts generic sensitive fields such as `secret`, `password`, `private_key`, `access_token`, and `authorization`. See `docs/security-hardening-release-report.md` and the external/managed-PostgreSQL test packs.
+
+## License & Trademarks
+
+The source code is released under the [MIT License](LICENSE). The names "AgentGate" and "MAGON" and the associated logos are not licensed under MIT; all rights to them are reserved by MAGON.
