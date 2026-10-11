@@ -7,8 +7,9 @@ export function extractAPIKey(headers = {}) {
   if (direct) return String(direct).trim();
   const auth = headers[AUTH_HEADERS.authorization] || headers['Authorization'];
   if (!auth) return null;
-  const match = String(auth).match(/^Bearer\s+(.+)$/i);
-  return match ? match[1].trim() : null;
+  const value = String(auth).trim();
+  if (value.slice(0, 6).toLowerCase() !== 'bearer' || !/\s/.test(value.charAt(6))) return null;
+  return value.slice(6).trim() || null;
 }
 
 export function createAuthMiddleware(options = {}) {

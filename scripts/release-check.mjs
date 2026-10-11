@@ -28,7 +28,7 @@ ok('postgres tenant checks', /tenant_id\s*=\s*current_setting\('agentgate\.tenan
 ok('external review is not falsely claimed', /Not completed/i.test(fs.readFileSync(path.join(root, 'docs/external-security-review.md'), 'utf8')));
 
 const html = fs.readFileSync(path.join(root, 'standalone.html'), 'utf8');
-const scripts = [...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/gi)].map(m => m[1]);
+const scripts = [...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script\s*>/gi)].map(m => m[1]);
 const tmp = path.join(root, '.release-standalone-check.mjs');
 fs.writeFileSync(tmp, scripts.join('\n'));
 try { new Function(scripts.join('\n')); ok('standalone JS syntax', true); }
